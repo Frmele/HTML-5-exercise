@@ -30,3 +30,24 @@
 5. Bake for 20 minutes.
 
 -->
+
+<!--nesting correctly, wrong code example -->
+
+<ol>
+	<li>Luke</li>
+	<li>Leia</li>
+	<li>Han
+</ol>
+</li>
+
+<!--Output
+
+1. Luke
+2. Leia
+3. Han
+
+Although the </li> tag on line 6 should be right after the word Han, if you hit the Run button it will display a proper ordered list.
+
+Browsers ignore those small errors but try to avoid them because it can cause problems in unexpected ways.
+
+-->
