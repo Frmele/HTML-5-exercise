@@ -1,0 +1,166 @@
+<!--Exercise: Nested HTML about a movie
+Learning goals
+
+- Create ordered and unordered lists in HTML
+
+- Nest elements correctly
+
+Description
+
+
+For this exercise, we're going to write some nested HTML about a movie.
+
+Fork the REPL below with code from the solution to the previous exercise and use that as the basis for this exercise. Alternatively, you can use the code you wrote and follow the checklist below.
+
+
+- Ordered facts
+
+
+On the Wikipedia or IMDB page of the movie, see if you can find a list of facts that is ordered. If you can't find something, just pick any series of facts. There should be at least three facts.)
+
+
+Add this ordered list of facts to your HTML, using the right elements.
+
+<ol>, <li>
+
+Unordered facts
+
+
+On the Wikipedia or IMDB page of the movie see if you can find a list of facts that is unordered. An example would be the cast members. If you can't find something, just pick any series of facts. There should be at least three facts.
+
+
+Add this unordered list to your HTML, using the right elements.
+
+<ul>,<li>
+
+Nested facts
+
+
+On the page of your movie see if you can find another nested list of facts. An example would be the cast of a movie. Each outer item in the list would be an actor. The actor would then be a list of the first and last names of each of the actors. If you can't find something, just pick any series of nested facts.
+
+
+Add this nested list to your HTML, using the right elements
+
+
+Double check that you've correctly opened and closed each element, it can be easy to miss one-->
+
+
+
+<!--Start template for bootstrap to show the website on HTML how it will look like, template can be found here https://getbootstrap.com/docs/4.3/getting-started/introduction/-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <!--Card template from https://getbootstrap.com/docs/4.3/components/card/-->
+    <div class="card" style="width: 18rem;">
+        <img src="https://static.posters.cz/image/1300/posters/star-wars-episode-iv-a-new-hope-i90218.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">A New Hope</h5>
+          <p class="card-text">George Lucas movie</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    <h1>Star Wars: Episode IV – A New Hope</h1>
+
+    <!-- Ordered facts-->
+    <ol>
+        <li>Plot</li>
+        <li>Cast</li>
+        <li>Production</li>
+    </ol>
+    
+    <h2>Plot</h2>
+    <p>
+        Amid a galactic civil war, Rebel Alliance spies have stolen plans to the Galactic Empire's Death Star, a massive space station
+        capable of destroying entire planets. Imperial Senator Princess Leia Organa of Alderaan, secretly one of the Rebellion's
+        leaders, has obtained its schematics, but her starship is intercepted by an Imperial Star Destroyer under the command of
+        the ruthless Darth Vader. Before she is captured, Leia hides the plans in the memory system of astromech droid R2-D2, who
+        flees in an escape pod to the nearby desert planet Tatooine alongside his companion, protocol droid C-3PO.
+    </p>
+    <p>
+        The droids are captured by Jawa traders, who sell them to moisture farmers Owen and Beru Lars and their nephew Luke Skywalker.
+        While Luke is cleaning R2-D2, he discovers a holographic recording of Leia requesting help from an Obi-Wan Kenobi. Later,
+        after Luke finds R2-D2 missing, he is attacked by scavenging Sand People while searching for him, but is rescued by elderly
+        hermit "Old Ben" Kenobi, an acquaintance of Luke's, who reveals that "Obi-Wan" is his true name. Obi-Wan tells Luke of his
+        days as one of the Jedi Knights, the former peacekeepers of the Galactic Republic who drew mystical abilities from a metaphysical
+        energy field known as "the Force", but were ultimately hunted to near-extinction by the Empire. Luke learns that his father
+        fought alongside Obi-Wan as a Jedi Knight during the Clone Wars until Vader, Obi-Wan's former pupil, turned to the dark
+        side of the Force and murdered him. Obi-Wan gives Luke his father's old lightsaber, the signature weapon of Jedi Knights.
+    </p>
+    
+    <h2>Cast</h2>
+    <p>
+        Mark Hamill as Luke Skywalker: A young adult raised by his aunt and uncle on Tatooine, who dreams of something more than
+        his current life and learns about the Force and the Jedi. Lucas favored casting young actors who lacked long experience.
+    </p>
+    <p>
+        Harrison Ford as Han Solo: A cynical smuggler hired by Obi-Wan and Luke to take them to Alderaan in his ship, the Millennium
+        Falcon, co-piloted with Chewbacca.
+    </p>
+    
+    
+    <h2>Production</h2>
+    <p>
+        Lucas had the idea for a space-fantasy film in 1971, after he completed directing his first full-length feature, THX 1138.
+        Originally, Lucas wanted to adapt the Flash Gordon space adventure comics and serials into his own films, having been fascinated
+        by them since he was young.
+    </p>
+    <p>
+        Director Francis Ford Coppola, who accompanied Lucas in trying to buy the Flash Gordon rights, recounted in 1999: "[George]
+        was very depressed because he had just come back and they wouldn't sell him Flash Gordon. And he says, 'Well, I'll just
+        invent my own.'"
+    </p>
+    
+    <h2>Cast Actors</h2>
+    
+    
+    <ul> <!-- Unordered facts & nested data -->
+        <li>Mark Hamil as Luke Skywalker
+            <ul>
+                <li>Main Charachter, Protagonist</li>
+            </ul>
+        </li>
+        <li>Harrison Ford as Han Solo
+            <ul>
+                <li>Main Charachter, Co - Protagonist</li>
+            </ul>
+        </li>
+        <li>Carrie Fisher as Princess Leia
+            <ul>
+                <li>Main Charachter, Co - Protagonist</li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+   
+    
+
+
