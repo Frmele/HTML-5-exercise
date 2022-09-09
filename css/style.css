@@ -9,3 +9,36 @@ p{
     color:white;
 
 }
+
+#card-1{
+    padding:10px;
+    background-color: rgb(187, 187, 187);
+    border-radius:35px;
+    transition: transform 0.8s;
+    transform: scale(1.05);
+    margin-top: 10px;
+}
+
+.hero{
+    background-image: url("https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B076429922B4955CDA9A99993501546F9A34C984C7652439089F4A166FFC4173/scale?width=1200&aspectRatio=1.78&format=jpeg");
+    background-size: cover;
+    min-height: 450px;
+}
+
+#card-1-img{
+    border-radius:35px;
+}
+
+.btn-1{
+    background-color: grey;
+}
+
+#card-1:hover{
+    transform: scale(1.1);
+}
+
+
+#btn-lg{
+    margin-top: 30px;
+
+}
