@@ -1,0 +1,61 @@
+<!--  Exercise: Creating links with complex paths
+Learning goals
+
+
+
+Create links to HTML files in subdirectories
+
+
+
+Create links to HTML files in parent directories
+
+
+
+Create links to HTML files in parent’s subdirectories
+
+Continued
+Description
+
+We have a website for our company. The company has departments, each department has a homepage. The invoicing department also has an archive.
+
+In this exercise, we’re going to create several links to and from different pages on our website.
+
+Follow the checklist below:
+
+
+Run the REPL. You should now see the homepage for our website. This has a link to the development department page
+
+
+Fold out each directory in the REPL so you can see all the HTML files. Do this on Files, at the left
+
+
+Use the following diagram (see below) to see where you need to add links. Each block in the diagram is a page.
+
+
+For each line from one block to another: make two links, one from block A to block B and another one from block B to block A.
+
+
+Make sure to check each link to see if it links to the correct page -->
+
+<h1>Welcome to Yavin 4</h1>
+<p>
+<a href="app/departments/development/index.html">Go to development department</a>
+</p>
+<p>
+<a href="app/departments/sales/index.html">Go to sales department</a>
+</p>
+<p>
+<a href="app/departments/marketing/index.html">Go to marketing department</a>
+</p>
+<p>Sublevels</p>
+<p>
+<a href="app/departments/development/archive/archive.html">Go to archive development data</a>
+</p>
+<p>
+<a href="app/departments/development/archive/2014/2014.html">Go to 2014 data</a>
+</p>
+<p>
+<a href="app/departments/development/archive/2015/2015.html">Go to 2015 data</a>
+</p>
+
+
