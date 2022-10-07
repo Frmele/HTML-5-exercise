@@ -43,6 +43,7 @@ Close the form tag (</form>) and test your code! -->
   <body>
          <h1>User Data</h1>
     <form>
+             <h3>Input data</h3>
             <label for="user_name">Name:</label>
             <input type="text" id="user_name" value="Francesca" name="user_name" required><br>
             <br>
@@ -56,12 +57,31 @@ Close the form tag (</form>) and test your code! -->
             <input type="tel" id="tel"  name="phone" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             <br>
             <br>
+            <h3>Checkboxes</h3>
+            <br>
+            <br>
             <input type="checkbox" id="movies" name="movies" value="Movies">
             <label for="movies"> I like movies</label><br>
             <input type="checkbox" id="reading" name="reading" value="Reading">
             <label for="reading"> I like reading</label><br>
             <input type="checkbox" id="music" name="music" value="Music">
             <label for="music"> I like music</label>
+            <br>
+            <br>
+            <h3>Radio buttons</h3>
+            <br>
+            <br>
+            <input type="radio" id="sweatpants" name="pants" value="Sweatpants">
+            <label for="sweatpants"> I am currently wearing sweatpants</label><br>
+            
+            <input type="radio" id="jeans" name="pants" value="Jeans">
+            <label for="jeans"> I am currently wearing jeans</label><br>
+            
+            <input type="radio" id="miscpants" name="pants" value="Misc pants">
+            <label for="miscpants"> I am wearing another type of pants</label><br>
+            
+            <input type="radio" id="nopants" name="pants" value="No pants">
+            <label for="nopants"> I don’t wear pants</label>
             <br>
             <br>
             <!-- the input as "submit" will automatically create a button to submit -->
