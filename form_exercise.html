@@ -1,0 +1,64 @@
+<!-- Description
+
+You have decided to start a new online bakery together with some friends. To receive orders, you will need to add a form to the new website. Try to think of some products and options you would like to sell.
+
+Follow the checklist below:
+
+Add a select element with multiple options. This could be the types of cupcakes that you are selling.
+
+Add at least one option by implementing  checkbox. This could be different options for the cupcake above, like vegan, gluten free, etc.
+
+Add different kind of toppings where the customer can only pick one option by implementing radio buttons
+
+Allow the user to add extra requests by implementing a text area 
+
+Implement a button to finish up the order -->
+
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Order your first item</h1>
+    <form>
+     <label for=”cookies”>Choose your favorite cookie:</label>
+            <select name="cookies" id="cookies">
+            <option value="">--Please choose your favorite Cookie–</option>
+            <br>
+            <br>
+            <option value="chocolate">Chocolate</option>
+            <option value="white chocolate">White chocolate</option>
+            <option value="chectnut">Chestnut</option>
+            <option value="berries">Berries</option>
+            </select>
+            <br>
+            <br>
+      <h3>Select the type of option</h3>
+            <input type="checkbox" id="vegan" name="vegan" value="Vegan">
+            <label for="vegan"> Vegan </label><br>
+            <input type="checkbox" id="gluten_free" name="gluten_free" value="gluten_free">
+            <label for="gluten_free"> Gluten Free </label><br>
+            <br>
+            <br>
+      <h3>Toppings</h3>
+            <input type="radio" id="chocolate" name="chocolate" value="Chocolate">
+            <label for="chocolate"> Chocolate </label><br>
+            
+            <input type="radio" id="white_chocolate" name="white_chocolate" value="White chocolate">
+            <label for="white_chocolate"> White Chocolate</label><br>
+            
+            <input type="radio" id="caramel" name="caramel" value="Caramel">
+            <label for="caramel"> Caramel </label><br>
+            <br>
+            <br>
+      <h3>Remarks?</h3>
+            <label for="remarks">Any remark? (Allergies etc.)</label>
+            <br>
+            <textarea id="remarks" name="remarks" rows="5" cols="50">
+              Your remarks here.
+            </textarea>
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
