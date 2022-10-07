@@ -1,0 +1,119 @@
+<!-- You are going to create a website for a dating app.
+
+At the end of this course, you will create a dating app with JavaScript: "The Winc-winc 😉 app". 
+
+To do that, you need a webpage! That's what you are going to create it now.
+This exercise is the first part of the final project needed to complete the Web Development course.
+You’re going to use a lot of the elements that you’ve learned about in this module. You may use other elements, but it’s not required. You need to choose wisely when to use which elements.
+Scroll down, click on the open REPLIT button, fork it, and give it a good name. You will use this REPL project later, at the end of the CSS module.
+Consider it finished when you have completed all the requirements below.
+
+Requirements
+
+The website should have 4 pages (for this exercise, forget about the other files that are not *.html). We are giving you the first one: index.html
+Make sure the new HTML files are named using best practices around naming files
+In the homepage (index.html) add basic information about the dating app. 
+Add a “reviews” page where you can write a small reviews of your app. Just add some fake reviews about your app (we won't tell anybody 🤫).
+Add a "people" page about the people you can find inside the app.
+Add a "sign up" page, where users can can sign up using a form.
+All pages need to use these semantic HTML elements: header, nav, main, footer.
+The header element should contain a nav element with an unordered list of links to all the 4 pages in the site
+Each page should use the same template (boilerplate) where the header and footer of the page are shared
+The links to pages within the site need to use relative paths
+Put all HTML files in the root of your site
+The following pages need to have images: homepage and people.
+When looking for images make sure they’re not copyrighted. Good sources of images: here and here 
+Resize images that are too big
+If you want to use an image: always download it and add it to your REPL. Do not hotlink!
+All content images should have an alt attribute with a good value
+
+
+
+
+
+The “sign in” page should contain a form with:
+- a text input field with “name”
+- a text input field with “username” 
+- a form with a text area for a self description
+- a few dropdowns/radio buttons/checkboxes:
+- we leave this to your imagination (preferences, cities...) 
+- an email field where people can leave their email
+- A password
+- a submit button
+
+
+Each element in the form should have a label element for accessibility
+Each element that can have a placeholder should have one
+Do not think about spacing between the elements in your page: in the CSS module we’ll learn all about styling and layout. Do not use <br/> or empty <p> elements to create blank lines.
+Use a formatter to consistently format your HTML -->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,
+    html {
+      height: 100vh;
+      margin: 25;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    strong {
+      color: crimson;
+    }
+
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image\ \(42\).png");
+      height: 55%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:80px">I<strong>meet</strong> people</h1>
+      <p>Ready to start your experience together?</p>
+      <button>Click me</button>
+    </div>
+  </div>
+
+  <p>Page Content..</p>
+
+</body>
+
+</html>
