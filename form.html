@@ -1,0 +1,62 @@
+<!-- Follow the checklist below:
+
+
+Start coding on line 4 by adding a <form> tag
+
+
+Add a <label> tag to collect names on line 5
+
+
+Add the for attribute to <label> and give it a value ("user_name", for example)
+
+
+Add an <input> tag to gather data on line 6
+
+
+Give the <input> tag the corresponding attribute suitable for names.
+(type=”text”)
+
+
+Add the attributes id  and name to the <input> and give it a suitable value
+
+
+Give the <input> tag another needed attributes (value, required, placeholder...). Remember that the value for id should match the for value in <label>.
+
+
+Add a line break tag <br> after the <input> tag to create a more structured form.
+Note: Using <br> is usually not best practice but for now it is okay to use. Later in the CSS module we will learn about other ways to style our HTML.
+
+
+Repeat the process and add more labels and input tags to collect the data needed to contact people. We suggest to add password, email and phone.
+
+
+Before closing the form tag, add another element that allows users to submit their data (<input type=”submit” value="Submit">)
+
+
+Close the form tag (</form>) and test your code! -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+            <h1>User Data</h1>
+            <label for="user_name">Name:</label>
+            <input type="text" id="user_name" value="Francesca" name="user_name" required><br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="text" id="password"  name="password" required><br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email"  name="email" required><br>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone"  name="phone" required>
+            <br>
+            <br>
+        <input type=”submit” value="Submit">
+    </form>
+  </body>
+</html>
